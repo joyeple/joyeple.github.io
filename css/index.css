@@ -1,42 +1,18 @@
 body {
-  background-color: rgb(255, 255, 255);
-  font: 100 1.875em/1.38 Montserrat;
+  height: 100%;
+  background: url('../images/IMG_20170929_172022-01.jpg') rgb(255, 255, 255);
+  background-size: auto auto;
+  background-position: left top;
+  font: 400 3.125em/1.38 Montserrat;
   color: rgb(255, 255, 255);
-}
-
-.image {
-  display: block;
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 1;
-  width: 1474px;
-  height: auto;
-  margin-left: -15.2500000001%;
-  overflow: hidden;
 }
 
 .text {
   float: left;
-}
-
-.text-1 {
-  min-height: 163px;
-  margin: -1916px 0 0 4.25%;
-  font-family: Roboto;
-  font-size: 1em;
-  color: rgb(0, 0, 0);
-}
-
-.text-2 {
-  position: relative;
-  clear: both;
-  z-index: 2;
   width: 100%;
-  min-height: 88px;
-  margin-top: -1923px;
-  font-size: 1.667em;
-  font-weight: 700;
+  min-height: 333px;
+  margin-top: 80px;
+  font-size: 1em;
   text-align: center;
   color: rgb(255, 255, 255);
 }
