@@ -25,6 +25,33 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+	.blokimg {
+	position: relative;
+	}
+	.overlay{
+	display: none;
+	height: auto;
+	left: -15%;
+	position: absolute;
+	top: -50%;
+	width: auto;
+	z-index: 999;
+	}
+	.overlay .overlay_container{
+	display: table-cell;
+	vertical-align: middle;
+	}
+	.overlay_container img{
+	background-color: #AB5;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	}
+	.overlay:target {
+	display: table;
+	}
+</style>
 
   </head>
   <body>
@@ -68,6 +95,18 @@
           <img class="card-img-top probootstrap-animate" src="https://i.onthe.io/smngoz1ph8n070hkjo.23c544bc.jpg" alt="Card image cap" data-animate-effect="fadeIn">
           </a>
         </div>
+        <div class="blokimg">
+        	<div class="overlay" id="contenedor1">
+        	<div class="overlay_container">
+        		<a href="#close">
+        			<img src="https://i.onthe.io/smngoz1ph8n070hkjo.23c544bc.jpg"/>
+        		</a>
+        	</div>
+        	</div>
+        	<a href="#contenedor1">
+        		<img src="https://i.onthe.io/smngoz1ph8n070hkjo.23c544bc.jpg" id="imagenM1" />
+        	</a>
+        	</div>
         <div class="card">
             <img class="card-img-top probootstrap-animate" src="https://i.onthe.io/smngoz1v8dnv5b3bk8.53df546d.jpg" alt="Card image cap" data-animate-effect="fadeIn">
           </a>
