@@ -1,173 +1,100 @@
-=== Author WordPress Theme ===
-Contributors: array
-Donate link: https://arraythemes.com/
-Tags: blue, gray, light, white, two-columns, right-sidebar, fluid-layout, custom-background, custom-menu, editor-style, featured-images, sticky-post, theme-options, translation-ready
-Requires at least: 4.0
-Tested up to: 4.6
-Stable tag: 4.1.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+-------------------------------------------------------
+Getting started with Editor WordPress Theme
+-------------------------------------------------------
 
-Author was crafted to give your audience a rich and comfortable reading and browsing experience. By removing common distractions and using a minimal, focused design, users can focus solely on what's important – your content.
+= Using the Theme Customizer =
+You can change Editor’s theme options via the Customizer.
 
-== Description ==
+* To access the theme customizer, click Appearance → Customize in the WordPress admin menu. Editor’s options are located in the Theme Options tab.
+* Logo Upload: Upload your own logo to use in place of your site’s text title.
+* Sidebar Featured Post Category: Select a category from the drop down to feature a certain category in your sidebar. Leave this option blank if you don’t want to show the featured post area.
+* Sidebar Color: Choose between a light and dark color scheme for your sidebar.
+* When you’re finished making changes, click Save & Publish to save the settings. Check out your site to confirm your changes.
 
-A blank canvas for your thoughts. Author features clean, readable type and abundant white space.
+----------
 
-== Installation ==
+= Menu Setup =
+You’ll need to create at least one new menu for the header.
 
-1. Sign into your WordPress dashboard, go to Appearance > Themes, and click Add New.
-2. Click Add New.
-3. Click Upload.
-4. Click Choose File and select the theme zip file you downloaded from Array.
-5. Click Install Now.
-6. Click Add New, then click Upload, then click Choose File.
-7. After WordPress installs the theme, click Activate.
-8. You've successfully installed your new theme!
+* WordPress menus can be found under Appearence → Menus.
+* If you don’t have a menu already, click create a new menu to create one.
+* On the left hand side of the Menu page, select the pages to add to your menu and click Add to Menu. Drag the pages around and arrange them any way you’d like. Create a drop menu by dragging menu items under and to the right of another menu item.
+* Now that you have the menu created, you need to assign it to the header in the Theme Locations section.
+* Save the menu when finished.
 
-== Frequently Asked Questions ==
+----------
 
-= I need help! What should I do? =
+= Installing Jetpack =
+Jetpack is a WordPress plugin by Automattic, the folks who make WordPress. It’s a toolkit that provides various features and enhancements to your WordPress site. Editor utilizes several features (infinite scroll, carousel, etc.) of Jetpack, and must be installed for the theme to work as you see in the demo.
 
-Visit our support forum at array.is and we'll give you a hand.
+* Install Jetpack by going to Plugins → Add New and search for “Jetpack”. Install and activate the plugin. Once installed, you can enable Jetpack by
+* After activating Jetpack by WordPress.com, you will be asked to connect to WordPress.com to enable the Jetpack features.
+* Click the connect button and log in to a WordPress.com account to authorize the Jetpack connection.
+If you don’t yet have a WordPress.com account, you can quickly create one after clicking the connect button.
+* Once installed, activated, and connected to WordPress.com, you can visit the Jetpack settings page, which is now available at the top of your admin menu. Editor utilizes the following modules:
 
-== Screenshots ==
+Carousel – The Carousel adds a beautiful lightbox carousel to your gallery images. This can be seen on the gallery posts on the homepage of the demo.
 
-1. The theme home page filled with demo content.
+Contact Forms – Add a contact form to your posts or pages with the Contact Form module.
 
-== Change Log ==
-= 4.1.4 - 4/13/17 =
-* Improved Getting Started page.
+Tiled Galleries - With Tiled Galleries you can display your image galleries in three new styles: a rectangular mosaic, a square mosaic, and a circular grid.
 
-= 4.1.3 - 10/20/16 =
-* Improved sidebar form and label styles.
+Infinite Scroll – Infinite Scroll is a feature that loads the next set of posts automatically when visitors approach the bottom of the home page or posts page.
 
-= 4.1.2 - 6/2/16 =
-* Added integration for WPForms plugin.
+----------
 
-= 4.1.1 - 4/19/16 =
-* Improved Getting Started page for Array redesign launch.
+= Contact Page =
+Editor utilizes Jetpack’s contact form module for adding contact forms to your pages.
 
-= 4.1.0 - 2/19/16 =
-* Added comment support to full-width pages.
+* Firstly, make sure the Contact Form module is activated on the Jetpack page.
+* Go to Pages → Add New to create a new page to use as the contact page.
+* To create a contact form, click the contact form icon above the post editor. Visit the Jetpack Contact Form page (http://jetpack.me/support/contact-form/) for more information on how to create a contact form.
+* Publish the page when finished.
 
-= 4.0.9 - 2/17/16 =
-* Added comment support to pages.
+----------
 
-= 4.0.8 - 11/24/15 =
-* Improved list styles in comments.
+= Widgets =
+The widget section of Editor is located in the sidebar as a hidden menu. You can view your widgets by clicking the folder icon in Editor’s sidebar menu.
 
-= 4.0.7 - 04/07/15 =
-* Added Read More link to archive pages.
+----------
 
-= 4.0.6 - 03/09/15 =
-* Updated for the latest Array Toolkit.
+= Creating Media Posts =
+Editor makes it easy to share your images, videos, and quotes.
 
-= 4.0.5 - 12/16/14 =
-* Improved the loading of Google fonts so they'll work better on sites using SSL security.
+** Featured Image Posts **
 
-= 4.0.4 - 8/11/14 =
-* Changed the footer menu so that it doesn't display the fallback menu if one isn't assigned.
+* Create a new post and add a title and description.
+* Write your content and add whatever styling you want.
+* On the right hand side of your page, you’ll see the Featured Image pane. Click Set Featured Image and upload your image. Once uploaded, scroll down and click Use as featured image. Once set, you can close the image upload window.
+* Once you’ve added the featured image and content you can publish and preview your post.
 
-= 4.0.3 - 5/30/14 =
-* Changes to the Latest Updates screen.
-* Removed changelog.txt and moved change log information to readme.txt
-* Minor housekeeping.
-* Modified - style.css, readme.txt, inc/admin/getting-started/getting-started.php, inc/admin/getting-started/getting-started.css
+** Quote Post **
 
-= 4.0.2 - 5/8/14 =
-* Minor style updates for italic and bold text.
-* Modified - style.css
+* Create a new post and add a title and add your quote to the editor.
+* Add a quote citation by adding a name and wrapping it in a tag. See an example.
+* On the right hand side of your page, you’ll see the Format pane. Click Quote to set the post format.
+* Once you’ve added your quote and selected the Quote format you can publish and preview your post.
 
-= 4.0.1 - 4/21/14 =
-* Fixed issues with the Getting Started page and theme updates when using child themes.
-* Modified - style.css, includes/admin/getting-started/getting-started.php
+----------
 
-= 4.0 - 3/31/14 =
-* Prepared for Array.
-* Updated Font Awesome.
-* Updated FitVids.
-* Updated HTML5 Shiv.
-* Improved title handling for better compatibility with plugins.
-* General file cleanup.
+= Post Styles =
+Editor comes with a few custom element styles, which are used to easily add extra styling to your WordPress posts.
 
-= 3.4 - 12/30/13 =
-* Fixed margin bug on .sub-title div.
-* Modified - style.css, template-title.php, includes/updates/EDD_SL_Setup.php
+** Pull Quotes **
 
-= 3.3 - 11/12/13 =
-* Fixed spacing below featured images, galleries, and videos.
-* Modified - style.css, includes/js/flexslider/flexslider.css, includes/updates/EDD_SL_Setup.php
+Pull quotes are similar to block quotes, but are reserved for less text. See Editor’s Style Guide to see the suggested usage. To use pull quotes you can add a class of pull-left or pull-right to your content. See an example below.
 
-= 3.2 - 11/11/13 =
-* Removed hidden files.
-* Modified - Entire theme folder and contents replaced.
+<span class="pull-right">This text will be pulled right.</span>
 
-= 3.1 - 10/16/13 =
-* Fixed Doctype declaration in header. This should alleviate any issues users had with javascript not firing properly on some plugins.
-* Modified - style.css, header.php, includes/updates/EDD_SL_Setup.php
+** Text Highlight **
 
-= 3.0 - 10/8/13 =
-* Author has been recoded and restyled from the ground up. Please update the entire theme and see the revised help file (http://array.is/articles/author) for updated instructions on Author's use.
-* Added in-dash theme update support. You will now be able to quickly and seamlessly update your themes from within your dashboard. Visit Appearance -> Themes to check for an update. If there is one, you'll see a notice at the top of the screen.
+Text highlight simply adds a yellow background to your text, useful for in-paragraph emphasis. To use the highlight style, you can add a class of highlight to your content. See an example below.
 
-= 2.5 - 6/13/13 =
-* Updated Twitter widget and widget styles.
-* Temporarily removed twitter count in social widget.
+<span class="highlight">This text will be highlighted.</span>
 
-= 2.2 - 4/12/13 =
-* Updated Contact Form 7 email input styles.
+----------
 
-= 2.1 - 3/12/13 =
-* Fixed popular posts feature in recent posts widget.
-* Updated language files.
-* Cleaned up header.php and moved CSS to functions.php.
-* Changed transient cache time to 30 minutes to prevent widget from showing 0.
-* General file cleanup.
-
-= 2.0 - 0/0/00 =
-* Phantom update. No one knows what happened here.
-
-= 1.9 - 2/5/13 =
-* Fixed featured image floating issue.
-* Fixed search results for page entries.
-
-= 1.8 - 1/25/13 =
-* Note: Version 1.8 was a fairly big update, adding some new great features and moving some existing functionality into the Okay Toolkit plugin (http://wordpress.org/extend/plugins/okay-toolkit/). Please see the notes below and check out the revised help file (http://array.is/articles/author/) for help with the new features. Enjoy!
-* Added Custom Gallery support with WordPress 3.5 and the Okay Toolkit.
-* Added new Retina social icons (via the Okay Toolkit).
-* Moved Twitter, Dribbble and Flickr widgets to the Okay Toolkit. If you previously were using these widgets, you'll have to install the Toolkit plugin, go to Settings -&gt; Okay Toolkit, activate the plugins, and add them to your sidebar again. See the revised help file (http://array.is/articles/author/) for more info.
-* Removed bloat code from options.php.
-* General file and style cleanup.
-* Revised help file.
-
-= 1.7 - 1/17/13 =
-* Added RSS widget.
-* Added localization for comment section.
-
-= 1.6 - 12/5/12 =
-* Added fix for duplicate links in mobile menus.
-* Modified default styles, removing colored stripe and cleaning up menus a bit.
-
-= 1.5 - 10/15/12 =
-* Modified comments.php with cleaner code to allow for Jetpack support.
-* Fixed localization for a few strings in comments.php
-* Recreated translation files.
-
-= 1.4 - 8/24/12 =
-* Removed RSS count from sidebar widget based on user feedback. Worked inconsistently, broke other parts of the social widget.
-
-= 1.3 - 8/5/12 =
-* Added a max-width to the logo image.
-* Fixed secondary menu bug to prevent it from showing on mobile.
-
-= 1.2 - 6/19/12 =
-* Fixed bug that was hiding gallery images on paginated pages.
-* Added responsive support for videos inserted into the post area.
-
-= 1.1 - 6/12/12 =
-* Changed category menu to utilize drop-downs.
-* Updated functions.php to user get_template_directory_uri instead of stylesheet_uri.
-
-= 1.0 - 6/12/12 =
-* Initial release.
+= License Info =
+Font Awesome - ​http://fontawesome.io
+License: SIL OFL 1.1, CSS: MIT License - http://fontawesome.io/license
+Copyright: @davegandy

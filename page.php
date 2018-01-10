@@ -1,80 +1,34 @@
 <?php
 /**
- * The template for displaying pages.
+ * The template for displaying all pages.
  *
- * @package Author
- * @since Author 1.0
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package Editor
  */
 
 get_header(); ?>
 
-		<div id="content-wrap" class="clearfix">
-			<div id="content">
-				<!-- post navigation -->
-				<?php get_template_part( 'template-title' ); ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-				<div class="post-wrap">
-					<!-- load the posts -->
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-						<div <?php post_class('post'); ?>>
-							<div class="box">
+				<?php get_template_part( 'content', 'page' ); ?>
 
-								<?php if ( has_post_format( 'gallery' , $post->ID ) ) { ?>
-									<?php if ( function_exists( 'array_gallery' ) ) { array_gallery(); } ?>
-								<?php } ?>
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
 
-								<!-- load the video -->
-								<?php if ( get_post_meta( $post->ID, 'arrayvideo', true ) ) { ?>
-									<div class="arrayvideo">
-										<?php echo get_post_meta( $post->ID, 'arrayvideo', true ) ?>
-									</div>
+			<?php endwhile; // end of the loop. ?>
 
-								<?php } else { ?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-									<!-- load the featured image -->
-									<?php if ( has_post_thumbnail() ) { ?>
-										<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'large-image' ); ?></a>
-									<?php } ?>
-
-								<?php } ?>
-
-								<div class="frame">
-									<div class="title-wrap">
-										<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-									</div><!-- title wrap -->
-
-									<div class="post-content">
-										<?php the_content( __( 'Read More', 'author' ) ); ?>
-
-										<div class="pagelink">
-											<?php wp_link_pages(); ?>
-										</div>
-									</div><!-- post content -->
-								</div><!-- frame -->
-
-								<!-- post meta -->
-								<?php get_template_part( 'template-meta' ); ?>
-							</div><!-- box -->
-						</div><!-- post-->
-
-					<?php endwhile; ?>
-				</div><!-- post wrap -->
-
-				<?php else: ?>
-			</div><!-- content -->
-
-			<?php endif; ?>
-			<!-- end posts -->
-
-			<?php if( comments_open() ) {
-				comments_template();
-			} ?>
-		</div><!--content-->
-
-		<!-- load the sidebar -->
-		<?php get_sidebar(); ?>
-	</div><!-- content wrap -->
-
-	<!-- load footer -->
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

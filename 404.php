@@ -1,38 +1,58 @@
 <?php
 /**
- * Page not found template.
+ * The template for displaying 404 pages (Not Found).
  *
- * @package Author
- * @since Author 1.0
+ * @package Editor
  */
 
 get_header(); ?>
 
-		<div id="content-wrap" class="clearfix">
-			<div id="content">
-				<div class="post-wrap">
-					<!-- load the posts -->
-					<div class="post">
-						<div class="box">
-							<div class="frame">
-								<div class="title-wrap">
-									<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php _e( '404 - Page Not Found', 'author' ); ?></a></h2>
-								</div><!-- title wrap -->
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-								<div class="post-content">
-									<p><?php _e( 'Sorry, but the page you are looking for has moved or no longer exists. Please use the search below, or the menu to locate the missing page.', 'author' ); ?></p>
+			<header class="page-header">
+				<h1 class="page-title"><?php _e( '404 / Page Not Found', 'editor' ); ?></h1>
+			</header><!-- .page-header -->
 
-									<?php get_search_form(); ?>
-								</div><!-- post content -->
-							</div><!-- frame -->
-						</div><!-- box -->
-					</div><!-- post-->
-				</div><!-- post wrap -->
-			</div><!-- content -->
+			<article id="post-<?php the_ID(); ?>" class="post">
+				<div class="entry-content">
+					<p><?php _e( 'It looks like nothing was found at this location. Please use the search box and links below to locate the content you were looking for.', 'editor' ); ?></p>
 
-			<!-- load the sidebar -->
-			<?php get_sidebar(); ?>
-		</div><!-- content wrap -->
+					<?php get_search_form(); ?>
 
-		<!-- load footer -->
-		<?php get_footer(); ?>
+					<hr/>
+
+					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+
+					<hr/>
+
+					<?php if ( editor_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<div class="widget widget_categories">
+						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'editor' ); ?></h2>
+						<ul>
+						<?php
+							wp_list_categories( array(
+								'orderby'    => 'count',
+								'order'      => 'DESC',
+								'show_count' => 1,
+								'title_li'   => '',
+								'number'     => 10,
+							) );
+						?>
+						</ul>
+					</div><!-- .widget -->
+					<?php endif; ?>
+
+					<hr/>
+
+					<?php
+					/* translators: %1$s: smiley */
+					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'editor' ), '' ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+					?>
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

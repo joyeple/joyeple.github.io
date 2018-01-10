@@ -1,31 +1,25 @@
 <?php
 /**
- * Template for displaying the footer.
+ * The template for displaying the footer.
  *
- * @package Author
- * @since Author 1.0
+ * Contains the closing of the #content div and all content after
+ *
+ * @package Editor
  */
 ?>
 
-			<div id="footer" class="clearfix">
-				<div class="footer-inside">
-					<div class="footer-copy">
-						<div class="menu-footer-wrapper">
-							<?php wp_nav_menu( array( 'menu_id' => 'menu-footer', 'theme_location' => 'footer', 'menu_class' => 'footernav', 'fallback_cb' => false, ) ); ?>
-						</div>
+	</div><!-- #content -->
 
-						<p class="copyright">&copy; <?php echo date("Y"); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> | <?php bloginfo( 'description' ); ?></p>
-					</div>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<a class="powered-by" href="<?php echo esc_url( __( 'http://wordpress.org/', 'editor' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'editor' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( __( 'Theme: %1$s by %2$s', 'editor' ), 'editor', '<a href="https://array.is/">Array</a>' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
 
-					<div class="social-icons">
-						<?php dynamic_sidebar( 'footer-icons' ); ?>
-					</div>
-				</div><!-- footer-inside -->
-			</div><!--footer-->
-		</div><!-- main -->
-	</div><!-- wrapper -->
-
-	<?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
 </body>
 </html>

@@ -1,13 +1,31 @@
 <?php
 /**
- * Template for the sidebar and its widgets.
+ * The Sidebar containing the main widget areas.
  *
- * @package Author
- * @since Author 1.0
+ * @package Editor
  */
 ?>
+	<div id="secondary" class="widget-area" role="complementary">
+		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-				<div id="sidebar">
-					<!-- load sidebar widgets -->
-					<?php dynamic_sidebar( 'sidebar' ); ?>
-				</div><!--sidebar-->
+			<aside id="search" class="widget widget_search">
+				<?php get_search_form(); ?>
+			</aside>
+
+			<aside id="archives" class="widget">
+				<h2 class="widget-title"><?php _e( 'Archives', 'editor' ); ?></h2>
+				<ul>
+					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+				</ul>
+			</aside>
+
+			<aside id="meta" class="widget">
+				<h2 class="widget-title"><?php _e( 'Meta', 'editor' ); ?></h2>
+				<ul>
+					<?php wp_register(); ?>
+					<li><?php wp_loginout(); ?></li>
+					<?php wp_meta(); ?>
+				</ul>
+			</aside>
+		<?php endif; // end sidebar widget area ?>
+	</div><!-- #secondary -->
