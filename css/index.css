@@ -8,10 +8,13 @@ body {
 }
 
 .text {
-  float: left;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
   width: 100%;
   min-height: 333px;
-  margin-top: 80px;
+  margin: 0 auto;
   font-size: 1em;
   text-align: center;
   color: rgb(255, 255, 255);
