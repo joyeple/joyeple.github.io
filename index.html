@@ -1,210 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!--
-    More Templates Visit ==> ProBootstrap.com
-    Free Template by ProBootstrap.com under the License Creative Commons 3.0 ==> (probootstrap.com/license)
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Focus &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
 
-    IMPORTANT: You can do whatever you want with this template but you need to keep the footer link back to ProBootstrap.com
-    -->
-    <title>Рафаэль Хамитов</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Фотоблог обо всём" />
-    <meta name="keywords" content="Photo, photography, фото, фотография, блог, blog, жизнь, life, street photo" />
-    <meta name="author" content="Rafael Khamitov" />
+  <!-- 
+	//////////////////////////////////////////////////////
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	//////////////////////////////////////////////////////
+	 -->
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-	.blokimg {
-	position: relative;
-	}
-	.overlay{
-	display: none;
-	height: auto;
-	left: -15%;
-	position: absolute;
-	top: -50%;
-	width: auto;
-	z-index: 999;
-	}
-	.overlay .overlay_container{
-	display: table-cell;
-	vertical-align: middle;
-	}
-	.overlay_container img{
-	background-color: #AB5;
-	padding: 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	}
-	.overlay:target {
-	display: table;
-	}
-</style>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-  </head>
-  <body>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- animatedresponsiveImagegrid  -->
+	<link rel="stylesheet" href="css/animatedresponsiveImagegrid.css">
+	<!-- Magnifoc Popup  -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <aside class="probootstrap-aside js-probootstrap-aside">
-      <a href="#" class="probootstrap-close-menu js-probootstrap-close-menu d-md-none"><span class="oi oi-arrow-left"></span> Close</a>
-      <div class="probootstrap-site-logo probootstrap-animate" data-animate-effect="fadeInLeft">
-
-        <a href="index.html" class="mb-2 d-block probootstrap-logo">Рафаэль Хамитов</a>
-        <!--<p class="mb-0">My Flickr<a href="https://flickr.com/photos/eplemania" target="_blank">Flickr</a></p>-->
-      </div>
-      <div class="probootstrap-overflow">
-        <nav class="probootstrap-nav">
-          <ul>
-            <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="index.html">Главная</a></li>
-            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="about.html">Обо мне</a></li>
-            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="services.html">Блог</a></li>
-            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="portfolio.html">Портфолио</a></li>
-            <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="contact.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <footer class="probootstrap-aside-footer probootstrap-animate" data-animate-effect="fadeInLeft">
-          <ul class="list-unstyled d-flex probootstrap-aside-social">
-            <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
-            <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
-            <!--<li><a href="#" class="p-2"><span class="icon-dribbble"></span></a></li>-->
-          </ul>
-          <p>&copy; 2018 <a href="t.me/eimic" target="_blank">Рафаэль Хамитов</a></p>
-        </footer>
-      </div>
-    </aside>
+	<link rel="stylesheet" href="css/style.css">
 
 
-    <main role="main" class="probootstrap-main js-probootstrap-main">
-      <div class="probootstrap-bar">
-        <a href="#" class="probootstrap-toggle js-probootstrap-toggle"><span class="oi oi-menu"></span></a>
-        <div class="probootstrap-main-site-logo"><a href="index.html">Рафаэль Хамитов</a></a></div>
-      </div>
-      <div class="card-columns">
-        <div class="card">
-          <img class="card-img-top probootstrap-animate" src="https://i.onthe.io/smngoz1ph8n070hkjo.23c544bc.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="https://i.onthe.io/smngoz1v8dnv5b3bk8.53df546d.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_3.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_4.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_5.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_6.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_7.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_8.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_9.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_10.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_11.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_12.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_13.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_14.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_15.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_16.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_17.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_18.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_19.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_20.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-        <div class="card">
-            <img class="card-img-top probootstrap-animate" src="images/img_21.jpg" alt="Card image cap" data-animate-effect="fadeIn">
-          </a>
-        </div>
-      </div>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
+	</head>
+	<body>
 
-      <div class="container-fluid d-md-none">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-unstyled d-flex probootstrap-aside-social">
-              <li><a href="https://twitter.com/rafaelkhamitov/" class="p-2"><span class="icon-twitter"></span></a></li>
-              <li><a href="https://www.instagram.com/eimic/" class="p-2"><span class="icon-instagram"></span></a></li>
-              <!--<li><a href="#" class="p-2"><span class="icon-dribbble"></span></a></li>-->
-            </ul>
-            <p>&copy; 2018 <a href="https://t.me/eimic/" target="_blank">Рафаэль Хамитов</a>.--> </p>
-          </div>
-        </div>
-      </div>
+	<nav id="fh5co-main-nav" role="navigation">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="fh5co-page">
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<h1 class="text-center"><a class="fh5co-logo" href="index.html"><i class="icon-camera2"></i></a></h1>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				</div>
+			</div>
+		</header>
+		<div id="fh5co-intro-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 animate-box text-center">
+						<h2 class="intro-heading">Focus leads you for a better Photography site</h2>
+						<p><span>Created with <i class="icon-heart3"></i> by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-photos-section">
+			<div class="container">
+				<div id="ri-grid" class="ri-grid animate-box">
+					<img class="ri-loading-image" src="images/loading.gif"/>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/pic1.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic2.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic3.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic4.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic5.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic6.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>128 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic7.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>127 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic8.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>126 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic9.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>125 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic10.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>124 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic11.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>123 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic12.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>122 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic13.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>121 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic14.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>120 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic15.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>129 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic16.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>128 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic17.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>127 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic18.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>126 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic19.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>125 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic20.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>124 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic21.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>123 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic22.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>122 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic23.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>121 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic24.jpg"/>
+								<div class="desc">
+									<h3>Album<br><span>121 Photos</span></h3>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-services-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box ">
+						<div class="heading-section">
+							<h2>Our Services</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span><i class="icon-video-camera2"></i></span>
+							<h3>Collect Video</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span><i class="icon-cloud-download"></i></span>
+							<h3>Download Photos</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span><i class="icon-camera2"></i></span>
+							<h3>Capture Photos</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-counters" style="background-image: url(images/hero.jpg);" data-stellar-background-ratio="0.5" id="counter-animate">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box">
+						<div class="heading-section">
+							<h2>Fun Facts</h2>
+						</div>
+					</div>
+				</div>
+				<div class="fh5co-narrow-content animate-box">
+					<div class="row" >
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="130" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Client</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="1450" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Photos</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<span class="fh5co-counter js-counter" data-from="0" data-to="7497" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="fh5co-counter-label">Pixels</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="section-title">Focus</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+						</div>
+						
+						<div class="col-md-3">
+							<h3 class="section-title">Our Services</h3>
+							<ul>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Photography</a></li>
+								<li><a href="#">Editing Photos</a></li>
+								<li><a href="#">Newsletter</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="#">FAQ / Contact</a></li>
+							</ul>
+						</div>
 
-    </main>
+						<div class="col-md-4">
+							<h3 class="section-title">Photos</h3>
+							<ul class="float">
+								<li><a href="#">Natures</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Wedding</a></li>
+								<li><a href="#">Food &amp; Drinks</a></li>
+								<li><a href="#">Animals</a></li>
+								<li><a href="#">Cars</a></li>
+							</ul>
+							<ul class="float">
+								<li><a href="#">Architecture</a></li>
+								<li><a href="#">Wallpaper Car</a></li>
+								<li><a href="#">Business</a></li>
+								<li><a href="#">Lanscape</a></li>
+								<li><a href="#">Environment</a></li>
+								<li><a href="#">Climate</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<h3 class="section-title">Information</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icon">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Free Html5 <a href="#">Focus</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- gridrotator -->
+	<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+	<!-- Magnific Popup -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
 
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript">	
+		$(function() {
+		
+			$( '#ri-grid' ).gridrotator( {
+				rows : 3,
+				// number of columns 
+				columns : 6,
+				w1024 : { rows : 3, columns : 5 },
+				w768 : {rows : 3,columns : 4 },
+				w480 : {rows : 3,columns : 3 },
+				w320 : {rows : 2,columns : 2 },
+				w240 : {rows : 1,columns : 1 },
+				preventClick : false
+			} );
+		
+		});
+	</script>
 
-    <script src="js/main.js"></script>
-
-
-  </body>
+	</body>
 </html>
+

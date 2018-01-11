@@ -1,9 +1,13 @@
-THEME: Aside - Free Bootstrap 4 Theme
-AUTHOR: ProBootstrap.com
-LICENSE: Under Creative Commons 3.0 (probootstrap.com/license)
-AUTHOR URI: https://probootstrap.com/
-Twitter: https://twitter.com/probootstrap
-Facebook: https://facebook.com/probootstrap
+
+TITLE: 
+Focus - Fully Responsive Free HTML5 template
+
+AUTHOR:
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: http://freehtml5.co/
+Twitter: http://twitter.com/fh5co
+Facebook: http://facebook.com/fh5co
 
 
 CREDITS:
@@ -14,26 +18,38 @@ http://getbootstrap.com/
 jQuery
 http://jquery.com/
 
+jQuery Easing
+http://gsgd.co.uk/sandbox/jquery/easing/
+
+Modernizr
+http://modernizr.com/
+
 Google Fonts
 https://www.google.com/fonts/
+
+Google Map
+https://maps.google.com
 
 Icomoon
 https://icomoon.io/app/
 
-Open Iconic
-https://useiconic.com/open/
+Respond JS
+https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
 
-Demo Images
-https://unsplash.com
+animate.css
+http://daneden.me/animate
 
-Owl Carousel 2
-https://owlcarousel2.github.io/OwlCarousel2/
+jQuery Waypoint
+https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
-WayPoint
-http://imakewebthings.com/waypoints/
+Demo Images:
+http://unsplash.com/
 
-Animate.css
-https://daneden.github.io/animate.css/
+jQuery Counter
+https://github.com/mhuggins/jquery-countTo
 
-ImagesLoaded
-https://imagesloaded.desandro.com/
+Gridrotator
+http://www.codrops.com
+
+Magnific Popup 
+http://dimsemenov.com/plugins/magnific-popup/
