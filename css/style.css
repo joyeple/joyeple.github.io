@@ -261,14 +261,14 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #FA7E0A;
+  background: #2f4f4f;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #FA7E0A;
+  background: #2f4f4f;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
