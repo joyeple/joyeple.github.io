@@ -1,0 +1,24 @@
+html * {
+	position:relative;
+}
+
+.wrapper {overflow:hidden;width:100%;}
+
+.tleft {text-align:left;}
+.tright {text-align:right;}
+.tjustify {text-align:justify;}
+.tcenter {text-align:center;}
+
+.col,.col33,.col50,.col75,.col25,.col180,.col200,.col250,.col300,.col66 {float:left;}
+.col33 {width:33%;}.col50 {width:50%;} .col75 {width:75%;} .col25 {width:25%;} .col66 {width:66%;}
+.col180 {width:180px;} .col200 {width:200px;} .col250 {width:250px;} .col300 {width:300px;}
+
+.left {float:left;}
+.right {float:right;}
+.center {margin:auto;}
+
+.header {position:absolute;width:100%;}
+
+p {margin-bottom:1em; margin-top:1em;}
+
+/*div {border:1px solid #ccc;height:50px;}*/
