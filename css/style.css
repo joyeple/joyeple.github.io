@@ -464,7 +464,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   left: 0;
   right: 0;
   text-align: center;
-  background: rgba(29, 82, 84, 0,8);
+  background: rgba(29, 82, 84, 0.8);
   opacity: 0;
   padding-top: 35%;
   -webkit-transition: 0.3s;
@@ -517,7 +517,7 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(29, 82, 84, 0,8);
+  background: rgba(29, 82, 84, 0.8);
   padding-top: 140px;
   opacity: 0;
   -webkit-transition: 0.3s;
