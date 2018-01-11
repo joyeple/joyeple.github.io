@@ -38,14 +38,14 @@ body.menu-show {
 }
 
 a {
-  color: #FA7E0A;
+  color: #2f4f4f;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: underline;
-  color: #FA7E0A;
+  color: #2f4f4f;
 }
 a:focus, a:active {
   outline: none;
@@ -723,7 +723,7 @@ input[type="text"] {
 }
 #footer a:hover, #footer a:focus {
   text-decoration: none;
-  color: #FA7E0A;
+  color: #2f4f4f;
 }
 
 .fh5co-social-icon a {
