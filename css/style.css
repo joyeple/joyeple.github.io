@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -506,10 +506,10 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   background-size: cover;
   background-position: center center;
   overflow: hidden;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
 }
 .grid-photo .desc {
   position: absolute;
@@ -523,10 +523,10 @@ header .fh5co-navbar-brand .fh5co-logo:active, header .fh5co-navbar-brand .fh5co
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
 }
 .grid-photo .desc h3 {
   color: white;
