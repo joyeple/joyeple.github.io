@@ -1,56 +1,163 @@
-![Jekyll Lens](https://i.imgur.com/Qi7gdQC.png)
+p h o t o r a m a 
+====================
 
-# Lens
-*A Jekyll website  for photographers and photo bloggers.*
+![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
 
-**Lens** is a photo gallery [Jekyll](https://jekyllrb.com/) theme designed
-specially for photographers and photo bloggers.
+----------
 
-Jekyll Lens uses [Jekyll](https://jekyllrb.com/) Static Site Generator (SSG) to
-generate the website and [GitHub Pages](https://pages.github.com) to host it.
+---> [DEMO](https://sunbliss.github.io/photorama/ "DEMO")  <---
 
-## Features
+----------
 
-  ✅ Free & Easy setup  
-  ✅ No coding required  
+A theme for **jekyll**. 
 
-You won't need any expensive server, just to host a photo blog. You don't
-even need to code anything. Just follow the steps below to setup your photo blog
-in minutes.
+Created for gh-pages (project page).
 
-## Get Started
+This template was crafted having in mind the photobloggers.
 
-1.  Fork this repository by clicking the **Fork** button at the top right.
+It uses [Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll "Clean Blog") as its basis.
 
-1.  Enable [GitHub Pages](https://pages.github.com) from the repository
-    settings.  
-    Your site will be automatically generated and published at
-    `https://<username>.github.io/<repository_name>`. You can also add your
-    custom domain if you want.  
-    (For more details visit: [GitHub Pages](https://pages.github.com)).
+----------
+## Change Log
 
-1.  Modify the `_config.yml` file to your liking.  
-    More information on each key in the `_config.yml` file has been described in
-    the file itself, as comments.
+### Version 2.1 (3/22/2017)
 
-1.  Upload your pictures in the `gallery` folder (and remove the default ones if
-    you want).
+* Fixed script loading. 
+* Fixed padding bottom for the navbar toggle menu.
 
-1.  Now, visit your website and see the magic! 🎉
 
-> If you liked this project, please ⭐ **Star** this repository to show your
->  love.
+### Version 2.0 (2/4/2017)
 
-#### Have any questions?
-If you have a bug or an idea, feel free to open a [new issue](https://github.com/ElasticDesigns/jekyll-lens/issues/new).
+* HTTPS is now enforced. 
 
-#### Want to contribute?
-If you want to contribute, make your changes or enhancements and [open a
-pull request](https://github.com/ElasticDesigns/jekyll-lens/compare).
+**Custom Domains are not supported.**
 
-> Feedback and bug reports are not only welcome, but strongly encouraged. 😄
+For the time being, the only way to apply a custom domain name is by removing HTTPS as of the previous version. 
+Hoping Github developers will give its users the ability to add a custom domain served under security.
 
-### Credits
-The HTML5 version of Lens template is designed by [HTML5UP](https://html5up.net/lens).
-A special thanks to them for the design, which I further enhanced for use with
-Jekyll.
+### Version 1.2 (1/31/2017)
+
+* Fixed footer code so that the twitter icon links to the twitter_username instead of instagram_username.
+
+### Version 1.1 (7/15/2016)
+
+* Improved galleries and search section.
+* Better rendering of the header text.
+
+### Version 1.0 (6/19/2016)
+* Initial Template
+
+----------
+
+ **IMPORTANT!!!**
+================
+
+### Before you begin: Change the URL and the BASEURL as well as the internal nav links in the _config.yml
+
+The **URL** should say `https://yourusername.github.io`
+
+The **BASEURL** should say `/repositoryname`
+
+**Internal nav** should say
+
+  nav:
+
+  - GALLERY: `"https://yourusername.github.io/repositoryname/gallery/"`
+  - JOURNAL: `"https://yourusername.github.io/repositoryname/journal/"`
+  - ABOUT: `"https://yourusername.github.io/repositoryname/about/`"
+
+If there are problems with loading assets like CSS files and images, make sure that both **URL** and **BASEURL** are set correctly!!! 
+
+----------
+
+ **NOT FOR HTTPS served repos!!!**
+==================================
+
+* Applies for v1.2!
+
+If you want to use your **own domain** go to the root of your project's repository, create a CNAME file and add a line with your domain name, e.g. `www.yourdomain.com`.
+
+Go to your domain name registrar and add a CNAME record pointing your domain to GitHub Pages:
+- type: CNAME
+- host: www.yourdomainname.com
+- answer: yourusername.github.io/repositoryname
+- TTL: 300
+
+----------
+
+Usage
+============ 
+
+###Quick Start
+
+1. [Fork this repository](https://github.com/sunbliss/photorama/fork) to get started. 
+2. Go to `https://github.com/yourusername/photorama/settings`
+3. Rename the repository to your new project, e.g. *myphotoblog*
+2. Create a new branch called `gh-pages` in your repository. 
+3. Go to the branches directory at `https://github.com/yourusername/repositoryname/branches` and *change* **default branch** to **gh-pages**.
+4. Delete **master** branch. 
+3. GitHub will build your site automatically and publish it at `https://yourusername.github.io/repositoryname/`.  
+
+----------
+
+- The homepage welcomes the visitors with 3 animated photos of your choice. It is recommended that all three are landscape orientated for best view.
+
+To change the welcome content at the far left of the Home page go here: `/index.html` and fill the responding lines of the YAML with your desired text.
+
+----------
+
+- To enable **disqus** comments in the posts, change their front matter for comments to 'true'.
+
+You must have a registered account in disqus, where you will also register a forum for your website.
+
+Find the line `s.src = '//yourproject.disqus.com/embed.js';  // ` in the disqus_comments.html and REPLACE 'yourproject' with your forum shortname.
+
+----------
+
+- In order to send **newsletters** about your posts to your subscribers, you should register an account in [tinyletter](http://www.tinyletter.com " tinyletter").
+
+Find the line `'https://tinyletter.com/yourproject', ` in the *newsletter.html* and replace 'yourproject' with your registered website.
+
+You can always ommit the newsletter rendering by deleting the line `{% include newsletter.html %}
+` in the *default.html* layout.
+
+----------
+
+If you want to use the matching **NEWSLETTER** template, you must always create a new file  by copying its respective index.html and renaming it to e.g. 2016-March-newsletter.html and then save it inside the folder and the accompanying images inside the 'images folder', so it can be accessed to your viewers through their browser. In this case the root url for the above newsletter will be ***http://yourgithubusername.github.io/yourproject/2016-March-newsletter.html***. Copy this link and replace this part of the code `http://www.yoursite.com/newsletter/year-month-newsletter` with it.
+
+----------
+
+**TAGS** and **CATEGORIES** of the posts 
+
+When you add a tag or a category name in the front matter of a post, don't forget to add the responding markdown files in /journal/tag/ folder and in /journal/category folder, so they can always render when browsing the journal or searching in the respective page.
+
+----------
+
+All the credits and the helpers can be found at **ABOUT** page.
+
+
+----------
+
+Read <a href="https://sunbliss.github.io/photorama/journal/images-size-for-better-performance/">**this**</a> post if you want to ensure your website always loads fast.
+
+
+----------
+
+I hope you will find it useful for your projects, photographic or not.
+
+
+----------
+
+
+##License
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Filippo Oretti, Dario Andrei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

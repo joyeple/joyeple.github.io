@@ -1,42 +1,73 @@
-## Site Meta ##
-# The title of the website.
-title: "Lens - Elastic Designs"
-# The description of the website
-description: "A Jekyll theme for photographers and photo bloggers."
-# Keywords/tags for you site.
-keywords: "lens, jeykll-lens, jekyll, theme, jekyll-theme, photography, blog, photography-blog, photo-blog"
-# Your copyright message.
-copyright: "Copyright &copy; 2017 - Elastic Designs."
+# Site settings
+title: PHOTORAMA
+email: ""
+description: "Photo Journal"
+url: "https://sunbliss.github.io"
+baseurl: "/photorama"
+facebook_username: ""
+twitter_username: ""
+instagram_username: ""
+github_username:  ""
+deviantart_username: ""
+flickr_username: ""
+discus_shortname: ""
+share: true
 
-## Site Configurations ##
-# 1st heading of the site.
-header: "Lens"
-# 2nd heading/sub heading of the website.
-subheader: "Elastic Designs"
-# A description/bio of the website.
-bio: "A Jekyll theme for photographers and photo bloggers."
-social:
-  # Your Twitter username.
-  twitter_username: ""
-  # Your Facebook username.
-  facebook_username: ""
-  # Your Instagram username.
-  instagram_username: ""
-  # GitHub username.
-  github_username: "ElasticDesigns"
-  # Your email address.
-  email: ""
+# Owner/author information
+owner:
+  name:   photorama
+  avatar: avatar.png
+  favicon: favicon.ico
+  info: photography website template
 
-## Gallery Configuration ##
-# If you modify this, also modify the `default.scope.path` key below.
-gallery_dir: "gallery"
-# Any valid value of "background-position" CSS attribute.
-image_position: "left center"
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
+# Set 'provider' to false to turn commenting off globally.
+#Set 'provider: false' to disable comments globally.
+# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
+#
+comments :
+  provider : disqus
+  disqus :
+    short_name : ""
 
-## Jekyll Configuration ##
-defaults:
- - scope:
-    # Should be same as the `gallery_dir` key above.
-    path: "gallery"
-   values:
-    image: true
+# Internal nav
+nav:
+  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
+  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
+  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+
+# All translation keys
+translations:
+ # 404.html
+  permalink: "/404.html"
+
+# Server
+destination:      	 ./_site
+port:             	 4000
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+paginate_path: "/journal/page:num/"
+permalink: "/journal/:title/"
+categories_path: "/journal/category/"
+tags_path: "/journal/tag/"
+gems: 
+ - jekyll-paginate
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# SiteMap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/writing/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
